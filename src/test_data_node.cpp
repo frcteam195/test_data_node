@@ -30,6 +30,7 @@ int main(int argc, char **argv)
         i += 0.01;
 
         uint64_t time = ros::Time::now().toNSec();
+        (void)time; //Remove unused variable warning;
 
         test_data.waves[0].slow = sin(i);
         test_data.waves[0].fast = sin(i*2);
